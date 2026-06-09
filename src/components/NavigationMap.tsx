@@ -57,6 +57,42 @@ export default function NavigationMap({ setCurrentPage, currentPage }: Navigatio
       tech: 'DAO 原子决策模型状态机 / 多维投票分布仪表盘',
       color: 'border-current/10 text-current hover:border-current/30 bg-current/[0.01]',
     },
+    {
+      id: 'admin-panel',
+      title: '06 / 管理后台中枢 (Admin Management Terminal)',
+      brief: '21个高集成度页面，管辖着今日日程、客户全谱、公共图床存储、设计画布、往来发票、多签适配等。',
+      inputs: ['客户业务往来资料', '图床存储 CDN 资源包', '安全认证证书'],
+      outputs: ['生成客户电子发票', '系统性能战略评估简报', '物理画布组件样式参数'],
+      tech: '多功能集成状态器 / 高动态过滤器 / 物理画质去噪渲染器',
+      color: 'border-current/10 text-current hover:border-current/30 bg-current/[0.01]',
+    },
+    {
+      id: 'ai-tools-panel',
+      title: '07 / AIGC 智能生成工具箱 (AI Suite)',
+      brief: '8个大类 AI 创意工位，包含智能 4K 超分、ComfyUI 拖拽节点图、无缝拼贴、色彩覆盖基因提取等。',
+      inputs: ['图像原片矢量文件', '创意自然语言指令组'],
+      outputs: ['4K 重构超分辨率快照', '提示词大模型拓展配方', '无缝像素拼平铺矩阵'],
+      tech: '实时 Canvas 双缓冲拟合 / 色相偏移自适应计算',
+      color: 'border-current/10 text-current hover:border-current/30 bg-current/[0.01]',
+    },
+    {
+      id: 'mobile-panel',
+      title: '08 / 移动端多视域仿真系统 (Mobile Simulator)',
+      brief: '依托玻璃质感智能真机手机外骨骼，提供15个专属移动微端页面，包含报价、周报、个人安全中心等。',
+      inputs: ['物理手机按键指令', '报价复杂度与周期步进阶数'],
+      outputs: ['估值报价契约哈希', '真机渲染效果 preview', '局部公告即时回写通知'],
+      tech: '3D 拟真 CSS 真机骨架 / 双向状态绑定监视器',
+      color: 'border-current/10 text-current hover:border-current/30 bg-current/[0.01]',
+    },
+    {
+      id: 'public-panel',
+      title: '09 / 鉴权协议安全网关 (Security Entrance Portal)',
+      brief: '6个公共安全及免密流页面，管理登录多签授权、主密钥 strength 分级校验、隐私合规执照签署及404引导。',
+      inputs: ['管理者登录令牌 API-Token', '新设密码字符串参数'],
+      outputs: ['256位物理散列授权哈希 (Auth Token)', '安全合规 Session 存储因子'],
+      tech: 'SHA/AES 盾级物理屏蔽层 / 现代极简几何出错插图',
+      color: 'border-current/10 text-current hover:border-current/30 bg-current/[0.01]',
+    },
   ];
 
   const activeNode = hoveredNode 

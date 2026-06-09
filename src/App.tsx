@@ -6,6 +6,10 @@ import DCAHub from './components/DCAHub';
 import AICopilot from './components/AICopilot';
 import PortfolioAnalysis from './components/PortfolioAnalysis';
 import GovernanceProposals from './components/GovernanceProposals';
+import AdminPanel from './components/AdminPanel';
+import AIToolsPanel from './components/AIToolsPanel';
+import MobilePanel from './components/MobilePanel';
+import PublicPanel from './components/PublicPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sun, Moon, Sparkles, Shield, User } from 'lucide-react';
 
@@ -79,12 +83,16 @@ export default function App() {
   };
 
   const navTabs = [
-    { id: 'dashboard', label: '账户总览 (Dashboard)' },
-    { id: 'dca', label: '定投配置 (DCA Control)' },
-    { id: 'copilot', label: '投研顾问 (AI Advisor)' },
-    { id: 'portfolio', label: '收益预测 (Projections)' },
-    { id: 'proposals', label: '改进提案 (Consensus)' },
-    { id: 'navmap', label: '架构脉络 (Topology)' },
+    { id: 'dashboard', label: '总览 (HQ)' },
+    { id: 'dca', label: '策略 (DCA)' },
+    { id: 'copilot', label: 'AI Advisor (智能)' },
+    { id: 'portfolio', label: '计算 (Simulate)' },
+    { id: 'proposals', label: 'DAO 投票' },
+    { id: 'navmap', label: '脉络 (Topology)' },
+    { id: 'admin-panel', label: '后台 (Admin)' },
+    { id: 'ai-tools-panel', label: '工具箱 (AI)' },
+    { id: 'mobile-panel', label: '真机仿真 (Mobile)' },
+    { id: 'public-panel', label: '主入口' },
   ];
 
   const toggleTheme = () => {
@@ -249,6 +257,22 @@ export default function App() {
 
                 {currentPage === 'proposals' && (
                   <GovernanceProposals />
+                )}
+
+                {currentPage === 'admin-panel' && (
+                  <AdminPanel onBack={() => setCurrentPage('navmap')} />
+                )}
+
+                {currentPage === 'ai-tools-panel' && (
+                  <AIToolsPanel onBack={() => setCurrentPage('navmap')} />
+                )}
+
+                {currentPage === 'mobile-panel' && (
+                  <MobilePanel onBack={() => setCurrentPage('navmap')} />
+                )}
+
+                {currentPage === 'public-panel' && (
+                  <PublicPanel onBack={() => setCurrentPage('navmap')} />
                 )}
               </motion.div>
             </AnimatePresence>
