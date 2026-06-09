@@ -1,0 +1,6 @@
+{
+  "name": "AIP Interaction Design",
+  "description": "An interactive, high-fidelity UI/UX design scheme and navigation structure presentation for AIP (AI Investment Platform & Proposal Portal).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
